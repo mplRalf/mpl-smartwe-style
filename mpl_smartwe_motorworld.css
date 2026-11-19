@@ -1,0 +1,178 @@
+/* Motorworld Region Stuttgart - Gestaltung fuer das SmartWe-Online-Formular
+   Basis: Struktur der mpl_smartwe_dww.css (Layout ueber div/table-Regeln bleibt erhalten).
+   Farben: Motorworld-Anmutung (Anthrazit, Papierweiss, Signalorange als Akzent). */
+
+html, body
+{
+font-family:Verdana, Geneva, sans-serif;
+font-size:0.9em;
+color:#f3f1ec;
+background-color:#17191c;
+margin:0px;
+padding:16px;
+}
+
+input[type='submit']
+{
+font-family:Verdana, Geneva, sans-serif;
+font-size:0.95em;
+font-weight:bold;
+color:#120a07;
+background-color:#e4572e;
+border:0px;
+border-radius:4px;
+padding:10px 18px;
+text-transform:uppercase;
+letter-spacing:0.04em;
+cursor:pointer;
+}
+
+input[type='submit']:hover
+{
+background-color:#f06b40;
+}
+
+input[type='submit']:focus-visible,
+input[type='text']:focus-visible,
+input[type='email']:focus-visible,
+input[type='tel']:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+input[type='checkbox']:focus-visible
+{
+outline:3px solid #f3f1ec;
+outline-offset:2px;
+}
+
+input[type='checkbox']
+{
+width:18px;
+height:18px;
+accent-color:#e4572e;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select
+{
+font-family:Verdana, Geneva, sans-serif;
+font-size:1em;
+color:#f3f1ec;
+background-color:#22252a;
+border:1px solid #3a3e46;
+border-radius:4px;
+height:34px;
+box-sizing:border-box;
+padding:6px 10px;
+}
+
+textarea {
+min-width:260px;
+max-width:260px;
+min-height:80px;
+max-height:160px;
+font-family:Verdana, Geneva, sans-serif;
+font-size:1em;
+color:#f3f1ec;
+background-color:#22252a;
+border:1px solid #3a3e46;
+border-radius:4px;
+padding:6px 10px;
+box-sizing:border-box;
+}
+
+div
+{
+display:inline-block;
+}
+
+div div
+{
+display:table;
+}
+
+div div div
+{
+display:table-row;
+}
+
+div div div div
+{
+display:table-cell;
+vertical-align:middle;
+padding-top:6px;
+padding-bottom:6px;
+}
+
+div.errordiv
+{
+display:none;
+width:200px;
+margin-left:8px;
+}
+
+div.validationError
+{
+display:initial;
+color:#ff7a6b;
+font-size:0.9em;
+}
+
+.textCell
+{
+width:100%;
+}
+
+.formlabel
+{
+vertical-align:middle;
+display:inline-block;
+min-width:150px;
+margin-right:10px;
+font-weight:bold;
+color:#f3f1ec;
+}
+
+.formlabelerror
+{
+color:#ff7a6b;
+}
+
+.forminput
+{
+width:260px;
+}
+
+.forminputerror
+{
+background-color:#3a1f1c;
+border-color:#ff7a6b;
+}
+
+.formbutton
+{
+float:right;
+}
+
+.validationmsg
+{
+font-size:1em;
+font-weight:bold;
+background-color:#3a1f1c;
+color:#ff7a6b;
+border-left:3px solid #ff7a6b;
+text-align:left;
+padding:8px 10px;
+}
+
+.infomsg
+{
+font-size:1em;
+font-weight:bold;
+background-color:#2a221e;
+color:#f3f1ec;
+border-left:3px solid #e4572e;
+text-align:left;
+padding:8px 10px;
+}
