@@ -70,6 +70,23 @@ padding:8px 12px;
 select[multiple]
 {
 height:130px;
+width:100%;
+max-width:420px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select,
+textarea
+{
+max-width:100%;
+}
+
+@media (max-width:520px)
+{
+html, body { padding:8px; }
+div div div div div { padding-bottom:10px; }
 }
 
 textarea {
@@ -94,20 +111,22 @@ display:inline-block;
 
 div div
 {
-display:table;
+display:block;
+width:100%;
 }
 
 div div div
 {
-display:table-row;
+display:block;
+width:100%;
 }
 
 div div div div
 {
-display:table-cell;
-vertical-align:middle;
-padding-top:6px;
-padding-bottom:6px;
+display:block;
+width:100%;
+padding-top:4px;
+padding-bottom:14px;
 }
 
 div.errordiv
@@ -131,11 +150,13 @@ width:100%;
 
 .formlabel
 {
-vertical-align:middle;
-display:inline-block;
-min-width:150px;
-margin-right:10px;
+display:block;
+width:100%;
+margin:0px 0px 6px 0px;
+font-size:0.8em;
 font-weight:bold;
+text-transform:uppercase;
+letter-spacing:0.06em;
 color:#f3f1ec;
 }
 
@@ -146,7 +167,9 @@ color:#ff7a6b;
 
 .forminput
 {
-width:320px;
+width:100%;
+max-width:420px;
+box-sizing:border-box;
 }
 
 .forminputerror
